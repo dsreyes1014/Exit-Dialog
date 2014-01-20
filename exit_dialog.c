@@ -5,6 +5,7 @@
 
 #include <gtk/gtk.h>
 #include <unistd.h>
+
 /**** 'close' Function ******************/
 
 void close_window(GtkWidget *widget, gpointer data)
