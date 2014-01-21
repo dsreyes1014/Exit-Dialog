@@ -116,6 +116,11 @@ int main(int argc, char *argv[])
 	gtk_button_set_always_show_image(GTK_BUTTON(restart_b), TRUE);	
 	gtk_button_set_always_show_image(GTK_BUTTON(shutdown_b), TRUE);	
 	
+	gtk_widget_set_tooltip_text(cancel_b, "Close window");
+	gtk_widget_set_tooltip_text(logout_b, "Logout of current session");	
+	gtk_widget_set_tooltip_text(restart_b, "Reboot computer");
+	gtk_widget_set_tooltip_text(shutdown_b, "Shutdown computer");
+	
 	gtk_box_pack_start(GTK_BOX(box_2), image_5, FALSE, FALSE, 2);	
 	gtk_box_pack_start(GTK_BOX(box_2), label, FALSE, FALSE, 2);
 	gtk_box_pack_start(GTK_BOX(box_1), box_2, FALSE,FALSE, 2);
