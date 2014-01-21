@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
  	
 	gtk_init(&argc, &argv); 	
  	
- 	label = gtk_label_new("Please choose an option");
+ 	label = gtk_label_new("Please choose an option below");
 	box_1 = gtk_box_new(GTK_ORIENTATION_VERTICAL, 15); 	
 	box_2 = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 80);
  	box_3 = gtk_button_box_new(GTK_ORIENTATION_HORIZONTAL);
@@ -94,6 +94,8 @@ int main(int argc, char *argv[])
 	image_5 = gtk_image_new_from_file("/usr/share/icons/Faenza/actions/64/system-shutdown.png");
 	
 	gtk_window_set_title(GTK_WINDOW(window), "Exit");
+	
+	gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
 	
 	gtk_button_box_set_layout(GTK_BUTTON_BOX(box_3), GTK_BUTTONBOX_SPREAD);	
 	
