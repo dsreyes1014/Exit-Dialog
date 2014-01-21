@@ -97,6 +97,8 @@ int main(int argc, char *argv[])
 	
 	gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
 	
+	gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER_ALWAYS);
+	
 	gtk_button_box_set_layout(GTK_BUTTON_BOX(box_3), GTK_BUTTONBOX_SPREAD);	
 	
 	gtk_button_set_image(GTK_BUTTON(cancel_b), image_1);
